@@ -1,0 +1,34 @@
+name: NoPVPForHim
+author: Ad5001
+version: "0.1"
+api: 1.13.0
+main: NoPVPForHim\Main
+
+description: Custom raw messages plugin for new api
+commands:
+ canthit:
+  description: "§6This command add or remove players that are not able to hit anyone"
+  usage: "/canthit <add|remove> <player>"
+  permission: nopvpforhim.command.canthit
+  aliases: [ch]
+ notakedamage:
+  description: "§6This command add or remove players that are not able to get hit by anyone"
+  usage: "/notakedamage <add|remove> <player>"
+  permission: nopvpforhim.command.notakedamage
+  aliases: [ntd]
+ nopvp:
+  description: "§6This command add or remove players that are not able to hit anyone and get hit by anyone"
+  usage: "/nopvp <add|remove> <player>"
+  permission: nopvpforhim.command.nopvp
+permissions:
+   nopvpforhim.command.canthit:
+    default: op
+    description: "§6This command add or remove players that are not able to hit anyone"
+   nopvpforhim.command.notakedamage:
+    default: op
+    description: "§6This command add or remove players that are not able to get hit by anyone"
+   nopvpforhim.command.nopvp:
+    default: op
+    description: "§6This command add or remove players that are not able to hit anyone and get hit by anyone"
+
+...
